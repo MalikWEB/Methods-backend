@@ -13,6 +13,17 @@ public class methods backendConfiguration extends Configuration {
     @NotEmpty
     private String defualtGenes = "You Have no genes in our database. Import them now by clicking the import button!";
 
+    @NotEmpty
+    private String defualtFamilyName = "Define Your Name with import!";
+
+    @NotEmpty
+    private String defualtUserName = "Stranger";
+
+    @JsonProperty
+    public void getdefualtUserName() {
+        return defualtUserName;
+    }
+
     @JsonProperty
     public String getTemplate(){
         return template;
@@ -32,4 +43,3 @@ public class methods backendConfiguration extends Configuration {
     public void setDefualtGenes(String genes) {
         this.defualtGenes = genes;
     }
-}
