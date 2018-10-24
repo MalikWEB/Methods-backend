@@ -2,3 +2,5 @@ logging:
   level: INFO
   loggers:
     com.malikklinker: DEBUG
+      template: Hello, %s!
+      defualtName: Stranger
